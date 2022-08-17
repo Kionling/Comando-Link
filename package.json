@@ -1,0 +1,21 @@
+{
+  "main": "server.js",
+  "name": "comando-link",
+  "version": "1.0.0",
+  "description": "The convenience of a website with multiple links belonging to one owner is the easiest way to define a digital business card. This repository contains the digital business card of the music group Comando Unico. All respective links to the music group will be located on this website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kionling/Comando-Link.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kionling/Comando-Link/issues"
+  },
+  "homepage": "https://github.com/Kionling/Comando-Link#readme"
+}
