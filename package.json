@@ -1,11 +1,16 @@
 {
-  "main": "server.js",
+  "main": "index.js",
   "name": "comando-link",
   "version": "1.0.0",
   "description": "The convenience of a website with multiple links belonging to one owner is the easiest way to define a digital business card. This repository contains the digital business card of the music group Comando Unico. All respective links to the music group will be located on this website.",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -17,5 +22,20 @@
   "bugs": {
     "url": "https://github.com/Kionling/Comando-Link/issues"
   },
-  "homepage": "https://github.com/Kionling/Comando-Link#readme"
+  "homepage": "https://github.com/Kionling/Comando-Link#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "if-env": "^1.0.4",
+    "mysql": "^2.18.1",
+    "react": "^18.2.0",
+    "react-moment": "^1.1.2",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "sequelize": "^6.21.3",
+    "sequelize-cli": "^6.4.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.3.0",
+    "nodemon": "^2.0.19"
+  }
 }
