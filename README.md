@@ -19,6 +19,8 @@ The convenience of a website with multiple links belonging to one owner is the e
 * React-dom-router
 * Nodemon 
 * Concurrently
+* Sequelize 
+* Sequelize-cli 
 
 
 # Authors
