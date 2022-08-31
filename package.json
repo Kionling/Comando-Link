@@ -1,5 +1,5 @@
 {
-  "main": "index.js",
+  "main": "server.js",
   "name": "comando-link",
   "version": "1.0.0",
   "description": "The convenience of a website with multiple links belonging to one owner is the easiest way to define a digital business card. This repository contains the digital business card of the music group Comando Unico. All respective links to the music group will be located on this website.",
