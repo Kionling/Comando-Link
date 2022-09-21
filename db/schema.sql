@@ -14,4 +14,5 @@ CREATE TABLE email (
     name VARCHAR(300),
     message VARCHAR(500), 
     PRIMARY KEY (id)
-);
+); 
+

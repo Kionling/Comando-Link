@@ -8,4 +8,4 @@ function NoMatch() {
     </div>)
 }
 
-export default Nomatch; 
+export default NoMatch; 
